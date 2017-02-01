@@ -1,0 +1,157 @@
+/* http://meyerweb.com/eric/tools/css/reset/
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+img {
+  border: 0;
+  height: auto;
+  max-width: 100%;
+  width: 100%; }
+
+*, *:before, *:after {
+  box-sizing: border-box; }
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline; }
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block; }
+
+body {
+  line-height: 1; }
+
+ol, ul {
+  list-style: none; }
+
+blockquote, q {
+  quotes: none; }
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none; }
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+body {
+  align-items: center;
+  background-color: #007820;
+  background-image: url("https://www.transparenttextures.com/patterns/felt.png");
+  display: flex;
+  flex-direction: column; }
+
+header {
+  margin: 2rem auto 1rem auto; }
+
+main {
+  width: 85%; }
+
+body {
+  font: 16px/1.6 "Kumar One", cursive; }
+
+header {
+  font-size: 2rem; }
+
+.card {
+  color: #E1E0CC;
+  font-size: 10rem;
+  text-shadow: 6px 6px black; }
+
+.actions button {
+  font: 2rem "Kumar One", cursive; }
+  .actions button:active {
+    color: #E1E0CC; }
+
+.game-result {
+  font-size: 3.5rem;
+  text-shadow: 2px 2px #E1E0CC; }
+
+.reset {
+  color: #E1E0CC;
+  font: 2rem "Kumar One", cursive; }
+  .reset:active {
+    color: black; }
+
+.playing-mat {
+  height: 500px;
+  text-align: center; }
+  .playing-mat #cards {
+    display: flex;
+    flex-direction: row;
+    height: 300px;
+    justify-content: center;
+    margin: 0 auto; }
+    .playing-mat #cards .card {
+      align-items: center;
+      animation: deal 1s ease;
+      background: url(../images/card-back.jpg);
+      background-size: cover;
+      border: 2px solid black;
+      display: flex;
+      justify-content: center;
+      margin: 0 1rem;
+      width: 220px; }
+
+@keyframes deal {
+  0% {
+    opacity: 0;
+    transform: translateX(100%); }
+  100% {
+    opacity: 1; } }
+.actions {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  margin-top: 1rem; }
+  .actions button {
+    background: #E1E0CC;
+    border: 2px solid black;
+    display: block;
+    height: 3rem;
+    margin-bottom: .5rem;
+    width: 30%; }
+    .actions button:hover {
+      cursor: pointer; }
+    .actions button:active {
+      background: black;
+      border: 2px solid #E1E0CC; }
+
+.result-container {
+  display: none;
+  text-align: center; }
+  .result-container.show {
+    display: block; }
+  .result-container .reset {
+    background: black;
+    border: 2px solid #E1E0CC;
+    border-radius: 50%;
+    height: 10rem;
+    width: 10rem; }
+    .result-container .reset:hover {
+      cursor: pointer; }
+    .result-container .reset:active {
+      background: #E1E0CC;
+      border: 2px solid black; }
+
+/*# sourceMappingURL=main.css.map */

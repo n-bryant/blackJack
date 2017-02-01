@@ -1,0 +1,43 @@
+body {
+  font: 16px/1.6 $primaryFont;
+}
+
+header {
+  font-size: 2rem;
+}
+
+.card {
+  color: $creme;
+  font-size: 10rem;
+  text-shadow: 6px 6px black;
+}
+
+.actions {
+  button {
+    font: 2rem $primaryFont;
+
+    &:active {
+      color: $creme;
+    }
+  }
+}
+
+.game-result {
+  font-size: 3.5rem;
+  text-shadow: 2px 2px $creme;
+}
+
+.reset {
+  color: $creme;
+  font: 2rem $primaryFont;
+
+  &:active {
+    color: black;
+  }
+}
+
+button {
+  &:focus {
+
+  }
+}
