@@ -61,7 +61,7 @@ const blackjackModule = (function() {
         this.getHandTotal();
         let result = '';
 
-        if (this.playerHandTotal < 15 && standing) {
+        if (this.playerHandTotal <= 15 && standing) {
           this.gameEnd = true;
           result = 'Dealer Wins';
           this.gameOver(result);
