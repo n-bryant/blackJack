@@ -32,7 +32,6 @@ const blackjackModule = (function() {
 
     getHandTotal() {
       // add up playerHand total
-      // fat arrow maintains the scope from one tier up
       let playerCardTotal = 0;
       this.playerHand.forEach((card) => {
         if (Number(card)) {
@@ -56,7 +55,7 @@ const blackjackModule = (function() {
       console.log(playerCardTotal);
     }
 
-    // evaluate score and alert the game result
+    // evaluate score and display the game result
     checkResult(standing, hitting) {
       if(!this.gameEnd) {
         this.getHandTotal();

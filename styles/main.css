@@ -99,7 +99,8 @@ header {
   .playing-mat #cards {
     display: flex;
     flex-direction: row;
-    height: 300px;
+    flex-wrap: wrap;
+    min-height: 300px;
     justify-content: center;
     margin: 0 auto; }
     .playing-mat #cards .card {
@@ -110,7 +111,7 @@ header {
       border: 2px solid black;
       display: flex;
       justify-content: center;
-      margin: 0 1rem;
+      margin: 0 1rem 1rem 1rem;
       width: 220px; }
 
 @keyframes deal {
@@ -128,9 +129,9 @@ header {
     background: #E1E0CC;
     border: 2px solid black;
     display: block;
-    height: 3rem;
+    min-height: 3rem;
     margin-bottom: .5rem;
-    width: 30%; }
+    width: 215px; }
     .actions button:hover {
       cursor: pointer; }
     .actions button:active {
@@ -141,7 +142,12 @@ header {
   display: none;
   text-align: center; }
   .result-container.show {
-    display: block; }
+    background: #E1E0CC;
+    border: 2px solid black;
+    display: block;
+    margin: 0 auto 2rem auto;
+    padding: 1rem;
+    width: 300px; }
   .result-container .reset {
     background: black;
     border: 2px solid #E1E0CC;

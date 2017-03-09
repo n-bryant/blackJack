@@ -5,7 +5,8 @@
   #cards {
     display: flex;
     flex-direction: row;
-    height: 300px;
+    flex-wrap: wrap;
+    min-height: 300px;
     justify-content: center;
     margin: 0 auto;
 
@@ -17,7 +18,7 @@
       border: 2px solid black;
       display: flex;
       justify-content: center;
-      margin: 0 1rem;
+      margin: 0 1rem 1rem 1rem;
       width: 220px;
     }
   }
@@ -43,9 +44,9 @@
     background: $creme;
     border: 2px solid black;
     display: block;
-    height: 3rem;
+    min-height: 3rem;
     margin-bottom: .5rem;
-    width: 30%;
+    width: 215px;
 
     &:hover {
       cursor: pointer;
@@ -63,7 +64,12 @@
   text-align: center;
 
   &.show {
+    background: $creme;
+    border: 2px solid black;
     display: block;
+    margin: 0 auto 2rem auto;
+    padding: 1rem;
+    width: 300px;
   }
 
   .reset {
